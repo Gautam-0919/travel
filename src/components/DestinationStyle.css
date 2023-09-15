@@ -1,0 +1,105 @@
+.destination{
+    margin: 3rem 6rem;
+}
+
+.destination h1{
+    font-size: 3rem;
+}
+
+.first-des{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4.5rem;
+}
+
+.first-des-reverse{
+    display: flex;
+    /* flex-direction: row-reverse; */
+    align-items: right;
+    justify-content: space-between;
+    margin-top: 4.5rem;
+}
+
+.des-text{
+    width: 45%;
+    text-align: start;
+    font-size: 1rem;
+}
+
+.des-text h2{
+    padding-bottom: 1rem;
+}
+
+.image{
+    position: relative;
+    width: 40%; 
+    height: 25% !important;
+    align-items: left;
+    /* resize: 'contain'; */
+    display: flex;
+    left: 100vh;
+    margin-top: -40%;
+    justify-content: space-between;
+    z-index: -99;
+}
+
+.image .img1{
+     /* width: 49%;
+     height: 350px; */
+     height: 10% ;
+     width: 45%;
+     /* resize: 'contain'; */
+     margin-left: 100;
+     /* object-fit: cover;    */
+     border-radius: 6px;
+     right: 0;
+     top: -40%;
+     box-shadow: -1px 1px 62px -18px rgba(0, 0,0, 0.19);
+
+}
+
+.image .img2{
+    height: 10%;
+    width: 45%;
+    position: relative;
+    top: -10%;
+    right: 0;
+    /* display: flex;
+    flex-direction: row-reverse; */
+}
+
+@media screen and (max-width: 768px){
+    .destination{
+        margin: 4rem 2rem;
+    }
+
+    .first-des{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 2.5rem;
+    }
+
+    .first-des-reverse{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 4.5rem;
+    }
+
+    .des-text{
+        width: 100%;
+    }
+
+    .image{
+        width: 100%;
+        margin: 1.8rem 0;
+        left: 0;
+        z-index: 1;
+       
+    }
+
+    .image img{
+        height: 250px;
+        
+    }
+}
